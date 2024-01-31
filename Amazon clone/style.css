@@ -26,7 +26,7 @@
     justify-content: center;
     flex-direction: column;
     margin-left: 8px;
-    padding:10px 10px ;
+    padding: 10px 10px;
 }
 
 .add-2 {
@@ -96,7 +96,7 @@ div.search {
 .language {
     display: flex;
     align-items: center;
-    padding:10px 10px ;
+    padding: 10px 10px;
 }
 
 .language img {
@@ -116,7 +116,7 @@ div.search {
 .sign-in {
     display: flex;
     flex-direction: column;
-    padding:10px 10px ;
+    padding: 10px 10px;
 }
 
 .sign-in-1 {
@@ -138,7 +138,7 @@ div.search {
     display: flex;
     color: white;
     flex-direction: column;
-    padding:10px 10px ;
+    padding: 10px 10px;
 }
 
 .return {
@@ -153,7 +153,7 @@ div.search {
 .kart {
     color: white;
     font-size: 32px;
-    padding:10px 10px ;
+    padding: 10px 10px;
 }
 
 .kart span {
@@ -183,7 +183,7 @@ div.search {
     align-items: center;
     gap: 2.5px;
     font-weight: bolder;
-    padding:10px 10px ;
+    padding: 10px 10px;
 }
 
 .bar i {
@@ -193,13 +193,14 @@ div.search {
 .panel-ops {
     display: flex;
     margin: 0px 26px;
+    width: 80%;
 }
 
 .panel-ops div {
     display: flex;
     margin: 2px;
     font-weight: 500;
-    padding:10px 10px ;
+    padding: 10px 10px;
 }
 
 .bar {
@@ -211,24 +212,175 @@ div.search {
     font-weight: bold;
     align-items: center;
     justify-content: flex-end;
-    width: 60%;
+    /* width: 60%; */
 }
-.panel-right div{
-    padding:10px 10px ;
+
+.panel-right div {
+    padding: 10px 10px;
 }
-.hero-section{
+
+.hero-section {
     background-image: url(assets/images/hero_image.jpg);
+    background-size: cover;
     height: 350px;
     background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
-.hero-cont{
+
+.hero-cont {
     background-color: white;
     height: 40px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
+    margin-bottom: 26px;
 }
-.hero-cont a{
-color: #007185;
+
+.hero-cont a {
+    color: #007185;
+}
+
+.shop {
+    background-color: #e2e7e6;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.box {
+    background-color: white;
+    width: 23%;
+    height: 400px;
+    margin-top: 15px;
+
+}
+
+.box-cont {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+.box img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: #007185;
+    font-size: 16px;
+}
+
+.box8-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.row-cont {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.line1 {
+    width: 70%;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.line2 {
+    text-align: left;
+    width: 79%;
+}
+
+.box8 p {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.foot-panel1 {
+    background-color: #37474a;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a {
+    display: block;
+    color: #dddddd;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+ul {
+    margin-top: 26px;
+
+}
+
+ul p {
+    font-weight: bolder;
+}
+
+.separation {
+    height: 2px;
+    background-color: #bebaba;
+}
+
+.foot-panel3 {
+    height: 70px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-panel3 img {
+    height: 65px;
+}
+
+.foot-panel4 {
+    height: 69px;
+    background-color: #0f1111;
+    padding-top: 35px;
+}
+
+.tandc {
+    color: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
 }
