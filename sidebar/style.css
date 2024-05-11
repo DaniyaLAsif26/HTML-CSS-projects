@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: wheat;
+}
+
+#check {
+    display: none;
+}
+
+
+ul li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.btn-1 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.logo a {
+    position: absolute;
+    left: 75px;
+    font-size: 30px;
+    top: 15px;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-2 {
+    position: absolute;
+    font-size: 25px;
+    top: 19px;
+    right: 15px;
+}
+
+.btn-2 i{
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: rgba(255, 68, 87, 255);
+    position: fixed;
+    height: 100vh;
+    width: 285px;
+    left: -300px;
+    border-radius: 0px 15px 15px 0px;
+    transition: 0.3s linear;
+}
+
+.menu {
+    position: relative;
+    top: 80px;
+}
+
+.menu-end {
+    position: absolute;
+    top: 700px;
+}
+
+.menu li {
+    line-height: 60px;
+}
+
+.menu-end {
+    width: 100%;
+}
+
+
+.menu li a {
+    text-align: center;
+    font-size: 26px;
+    transition: font-size 0.3s ease
+}
+
+.menu li i {
+    width: 40px;
+    font-size: 26px;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.menu li:hover {
+    background-color: rgb(209, 53, 69);
+    font-size: 30px;
+    cursor: pointer;
+    border-right: 7px solid black;
+}
+
+#check:checked~.sidebar {
+    left: 0px;
+}
