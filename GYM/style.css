@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 70px);
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+.back-to-top {
+    position: fixed;
+    top: 750px;
+    right: 50px;
+    z-index: 2;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 73, 73);
+    padding: 10px;
+    font-size: 40px;
+}
+
+.back-to-top.active {
+    opacity: 1;
+}
+
+
+.back-to-top a:hover {
+    background-color: rgb(161, 0, 0);
+    ;
+}
+
+
+.navbar {
+    background-color: red;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-left img {
+    height: 50px;
+    width: 270px;
+}
+
+.nav-left img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-weight: bold;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+
+.nav-button button {
+    height: 30px;
+    width: 80px;
+    font-size: 17px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.main {
+    color: white;
+    height: 95vh;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.main img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.white {
+    position: relative;
+    top: 120px;
+    font-size: 80px;
+    text-align: center;
+}
+
+.red {
+    position: relative;
+    color: red;
+    top: 110px;
+    font-size: 80px;
+    text-align: center;
+}
+
+.intro {
+    font-size: 22px;
+    top: 120px;
+    margin: 0px 100px;
+    text-align: center;
+    position: relative;
+}
+
+.black-box {
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.cont-btn {
+    position: relative;
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    top: 226px;
+    color: white;
+}
+
+.btn-1 {
+    background-color: red;
+    margin-right: 50px;
+}
+
+.btn-2 {
+    background: none;
+    border: 2px solid red;
+}
+
+.welcome {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.heading {
+    font-size: 80px;
+    margin: 20px 0px 10px;
+}
+
+.line {
+    width: 10vw;
+    height: 3px;
+    background-color: red;
+}
+
+.wlcm-mssg {
+    margin: 30px 60px 60px 60px;
+    text-align: center;
+}
+
+.wlcm-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 26px;
+}
+
+.box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    background: none;
+    border: 2px solid rgba(189, 169, 169, 0.233);
+    box-sizing: border-box;
+    padding: 0px 60px;
+}
+
+.box i {
+    font-size: 50px;
+    position: relative;
+    top: -30px;
+}
+
+.box> :nth-child(2) {
+    color: red;
+    font-size: 26px;
+}
+
+.box> :nth-child(3) {
+    font-size: 18px;
+    margin: 10px 0px 60px;
+}
+
+.genre {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 326px;
+    width: 100%;
+}
+
+.genre img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+}
+
+.bodybuild {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cali {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 25%;
+}
+
+.cross {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 50%;
+}
+
+.fitness {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 75%;
+}
+
+.genre p {
+    position: absolute;
+    font-size: 30px;
+    top: 150px;
+}
+
+.membership {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.membership h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    color: white;
+}
+
+.price-box {
+    height: 600px;
+    background-color: black;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 11px;
+    font-weight: bold;
+}
+
+.price-box2 {
+    background-color: red;
+}
+
+
+.price-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 50px;
+    position: relative;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.price-head> :nth-child(1) {
+    font-size: 20px;
+    height: 26px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.price-head>:nth-child(2) {
+    font-size: 50px;
+    height: 50px;
+}
+
+.price-head>:nth-child(3) {
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.price-box p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    margin: 0px 40px;
+    text-align: center;
+}
+
+.price-box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 720px;
+    height: 35px;
+    width: 90px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price-box2 button {
+    background-color: black;
+}
+
+.price-box> :nth-child(1) {
+    font-size: 35px;
+    position: relative;
+    top: 15px;
+    margin-bottom: 10px;
+}
+
+.price-box> :nth-child(2) {
+    font-size: 26px;
+    color: rgb(205, 127, 50);
+}
+
+.price-box2> :nth-child(2) {
+    color: #C0C0C0;
+}
+
+.price-box3> :nth-child(2) {
+    color: #BFA100;
+}
+
+.price-box1> :nth-child(1) {
+    color: rgb(255, 174, 93);
+}
+
+.price-box2> :nth-child(1) {
+    color: #dadada;
+}
+
+.price-box3> :nth-child(1) {
+    color: #d4b500;
+}
+
+
+.coach-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.coachs {
+    font-size: 50px;
+    margin: 30px 0px 40px;
+}
+
+.coach-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px;
+}
+
+.coach-info {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 40px;
+}
+
+.coach-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.img img {
+    height: 250px;
+    width: 226px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.coach-intro {
+    margin: 20px 0px;
+}
+
+.coach-intro h3 {
+    font-size: 24px;
+}
+
+.coach-intro span {
+    color: rgb(253, 96, 96);
+    font-size: 20px;
+}
+
+
+.coach-btn {
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.testimonial {
+    position: relative;
+}
+
+.testi-cont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.testimonial i {
+    font-size: 35px;
+}
+
+.testi-cont span {
+    font-size: 26px;
+    max-width: 50vw;
+}
+
+.testi-cont> :nth-child(4) {
+    margin-bottom: 50px;
+}
+
+.testimonial img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.testi-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.testi-name>:nth-child(1) {
+    color: red;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.testi-name>:nth-child(2) {
+    font-weight: lighter;
+    font-size: 20px;
+}
